@@ -24,7 +24,7 @@ void ARotationPlate::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (!FMath::IsNearlyZero(RotationSpeed)) //if (RotationSpeed != 0.0f)
+	if (!FMath::IsNearlyZero(RotationSpeed))
 	{
 		AddActorLocalRotation(FRotator(0.0f, RotationSpeed * DeltaTime, 0.0f));
 	}
